@@ -39,6 +39,16 @@ aca apreciamos como quedan los cuadraditos, notar los ejes x e y:
 
 y tambien podemos notar lo facil que es settear y gettear los colores de los pixeles
 
-![4.png](examples/docs/4.png)
+solo con cargar o llenar las tuplas necesarias:
 
+``` python
+(b, g, r) = image[0, 0]
+print("Pixel at (0, 0) - Red: %d, Green: %d, Blue: %d" % (r, g, b))
+
+image[0, 0] = (0, 0, 255)
+(b, g, r) = image[0, 0]
+print("Pixel at (0, 0) - Red: %d, Green: %d, Blue: %d" % (r, g, b))
+```
+
+![4.png](examples/docs/4.png)
 
